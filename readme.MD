@@ -87,7 +87,7 @@ Goto https://www.putty.org/ page. There is a You can download PuTTY [here](https
     postgres=# create databse $dbname;
     postgres=# create user $dbuser with password '$dbpassword'
     postgres=# alter role $dbuser set client_encoding to 'utf8';
-    postgres=# alter role $dbuser set default_transaction_isolation to 'read commited'
+    postgres=# alter role $dbuser set default_transaction_isolation to 'read committed'
     postgres=# alter role $dbuser set timezone to 'UTC';
     postgres=# grant all privileges on databse $dbname to $dbuser;
     postgres=# \q

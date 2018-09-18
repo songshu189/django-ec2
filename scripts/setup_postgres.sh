@@ -21,7 +21,7 @@ sudo -u postgres psql << EOF
 create databse $dbname;
 create user $dbuser with password '$password'
 alter role $dbuser set client_encoding to 'utf8';
-alter role $dbuser set default_transaction_isolation to 'read commited'
+alter role $dbuser set default_transaction_isolation to 'read committed'
 alter role $dbuser set timezone to 'UTC';
 grant all privileges on databse $dbname to $dbuser;
 \q
